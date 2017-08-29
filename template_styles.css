@@ -1372,6 +1372,7 @@ form.auth-form p {
 }
 
 .auth-form input {
+	width: 100%;
 	padding: 16px 25px;
 	font-size: 14px;
 	color: #656567;
@@ -1545,7 +1546,7 @@ form.auth-form p {
 		text-align: center;
 	}
 
-	.auth-form p {
+	form.auth-form p {
 	width: 100%;
 	}
 }
