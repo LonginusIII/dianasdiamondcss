@@ -1295,6 +1295,8 @@ h1 {
 }
 
 
+
+
 /* Fonts
 ------------------------------------------------------------------------------*/ 
 
@@ -1359,16 +1361,37 @@ h1 {
     font-style: normal;
 }
 
+
 /* Authorize
 ------------------------------------------------------------------------------*/ 
 
 form.auth-form {
 	margin-top: 20px;
+	margin-bottom: 26px;
 }
 
 form.auth-form p {
 	position: relative;
 	width: 450px;
+	margin-bottom: 0px;
+	padding-bottom: 5px;
+}
+
+form.auth-form p span {
+	font-size: 14px;
+}
+
+form.auth-form p span.miss {
+	color: red;
+}
+
+form.auth-form a {
+	text-decoration: none;
+	font-size: 14px;
+}
+
+form.auth-form a:hover {
+	text-decoration: underline;
 }
 
 .auth-form input {
@@ -1377,6 +1400,22 @@ form.auth-form p {
 	font-size: 14px;
 	color: #656567;
 	border: 1px solid #b8bcbe;
+	margin-bottom: 20px;
+}
+
+.auth-form input[type="password"] {
+	padding-right: 54px;
+}
+
+.auth-form input[type="submit"] {
+	background-color: #222224;
+	font-size: 16px;
+	color: #fff;
+	border: 0px;
+}
+
+.auth-form input[type="submit"]:hover {
+	background-color: #111;
 }
 
 .auth-form button[type="submit"] {
@@ -1387,8 +1426,41 @@ form.auth-form p {
 	position: absolute;
 	top: 3px;
 	right: 3px;
-	background: #b8bcbe url(../images/ico_plus.png) no-repeat 50% 50%;
+	background: #222224 url(../images/ico_plus.png) no-repeat 50% 50%;
+}
 
+.auth-form button[type="submit"]:hover {
+	
+	background: #111 url(../images/ico_plus.png) no-repeat 50% 50%;
+}
+
+#remember {
+	position: relative !important;
+}
+
+.auth-form label:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 21px;
+	height: 21px;
+	background: #222;
+}
+
+.auth-form label.checked:before {
+	background: #222 url(../images/ico_cross.png) no-repeat 50% 50%;
+}
+
+.auth-form label {
+	padding-left: 30px;
+	position: relative;
+	height: 21px;
+	color: #666668;
+	margin-bottom: 10px;
+	font-size: 14px;
+	display: block;
+	line-height: 21px;
 }
 
 
