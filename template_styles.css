@@ -1385,6 +1385,10 @@ form.auth-form p span.miss {
 	color: red;
 }
 
+form.auth-form p span.success {
+	color: #227524;
+}
+
 form.auth-form a {
 	text-decoration: none;
 	font-size: 14px;
