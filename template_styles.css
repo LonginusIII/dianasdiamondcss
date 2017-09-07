@@ -1404,7 +1404,7 @@ form.auth-form a:hover {
 	font-size: 14px;
 	color: #656567;
 	border: 1px solid #b8bcbe;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .auth-form input[type="password"] {
@@ -1438,6 +1438,17 @@ form.auth-form a:hover {
 	background: #111 url(../images/ico_plus.png) no-repeat 50% 50%;
 }
 
+.auth-form input[type="reset"] {
+	background-color: #bbb;
+	font-size: 16px;
+	color: #222;
+	border: 0px;
+}
+
+.auth-form input[type="reset"]:hover {
+	background-color: #c2c2c2;
+}
+
 #remember {
 	position: relative !important;
 }
@@ -1466,6 +1477,21 @@ form.auth-form a:hover {
 	display: block;
 	line-height: 21px;
 }
+
+
+div.captcha-wrap {
+	text-align: center;
+	width: 450px;
+}
+
+div.captcha-wrap img {
+	margin: 10px auto;
+}
+
+div.label span {
+	color: #444;
+}
+
 
 
 /* Media
@@ -1624,6 +1650,10 @@ form.auth-form a:hover {
 
 	form.auth-form p {
 	width: 100%;
+	}
+
+	div.label {
+		width: 100%;
 	}
 }
 
