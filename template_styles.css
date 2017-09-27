@@ -440,6 +440,9 @@ a:hover {
 	font-size: 12px;
 	font-weight: 600;
 	margin: 22px 0 0;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .products article {
@@ -1361,6 +1364,23 @@ h1 {
     font-style: normal;
 }
 
+/* Catalog
+------------------------------------------------------------------------------*/
+
+section.catalog {
+	padding-left: 1px;
+	
+}
+
+.catalog article {
+	height: 100% !important;
+}
+
+.catalog-pagination {
+	margin-top: 25px !important;
+	text-align: center;
+}
+
 
 /* Authorize
 ------------------------------------------------------------------------------*/ 
@@ -1905,6 +1925,14 @@ div.label span {
 	}
 }
 
+@media screen and (max-width: 530px) {
+
+	section.catalog {
+		margin: 0 auto -1;
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 520px) {
 
 	.last-products .bx-viewport {
@@ -1914,7 +1942,6 @@ div.label span {
 	.last-products .products article {
 		border: 0;
 	}
-
 }
 
 @media screen and (max-width: 480px) {
